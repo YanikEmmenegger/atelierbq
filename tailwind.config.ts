@@ -8,6 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        'AtelierBQ-Dark': "rgb(30, 30, 30)",
+        'AtelierBQ-Light':"rgb(255 247 237)",
+        'AtelierBQ-AccentLight': "rgb(254 215 170)",
+        'AtelierBQ-AccentDark': "rgb(234 88 12)",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",

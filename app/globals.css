@@ -23,3 +23,10 @@ html, body, :root {
         scrollbar-width: none; /* Firefox */
     }
 }
+::-moz-selection { /* Code for Firefox */
+    background: rgb(254 215 170);
+}
+
+::selection {
+    background: rgb(254 215 170);
+}
