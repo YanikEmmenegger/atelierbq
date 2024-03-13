@@ -4,29 +4,55 @@ import {FC} from "react";
 const Page: FC = () => {
     return (
         <>
-            <div className={"text-center py-20"}>
+            <div className={"w-3/4 pt-44 mx-auto"}>
+                <h1 className={"text-4xl"}>Atelier B² GmbH</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias amet aperiam aspernatur
+                    assumenda atque autem, consectetur consequatur corporis cumque cupiditate delectus dolorem doloribus
+                    dolorum, ducimus ea eius eligendi enim eos error est ex explicabo facere fuga fugiat harum id illum
+                    impedit in incidunt ipsa ipsam iure laborum laudantium magnam magni minus molestiae mollitia natus
+                    necessitatibus nemo neque nihil nisi nobis non nostrum numquam obcaecati odio officia omnis optio
+                    pariatur perferendis perspiciatis placeat praesentium provident quae quaerat quasi qui quia quidem
+                    quisquam quo ratione recusandae repellat reprehenderit repudiandae rerum saepe sapiente sequi
+                    similique
+                    sit soluta sunt suscipit tempora tenetur totam ullam unde vel velit veniam veritatis voluptas
+                    voluptates voluptatum. Adipisci alias amet aperiam aspernatur assumenda atque autem, consectetur
+                    consequatur corporis cumque cupiditate delectus dolorem doloribus dolorum, ducimus ea eius eligendi
+                </p>
+                <br/>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias amet aperiam aspernatur
+                    assumenda atque autem, consectetur consequatur corporis cumque cupiditate delectus dolorem doloribus
+                    dolorum, ducimus ea eius eligendi enim eos error est ex explicabo facere fuga fugiat harum id illum
+                    impedit in incidunt ipsa ipsam iure laborum laudantium magnam magni minus molestiae mollitia natus
+                    necessitatibus nemo neque nihil nisi nobis non nostrum numquam obcaecati odio officia omnis optio
+                    pariatur perferendis perspiciatis placeat praesentium provident quae quaerat quasi qui quia quidem
+                    quisquam quo ratione recusandae repellat reprehenderit repudiandae rerum saepe sapiente sequi
+                    similique
+                    sit soluta sunt suscipit tempora tenetur totam ullam unde vel velit veniam veritatis voluptas
+                    voluptates voluptatum. Adipisci alias amet aperiam aspernatur assumenda atque autem, consectetur
 
-                <h1 className={"text-5xl  text-normal font-thin"}>Atelier B²</h1>
-                <h1 className={"text-5xl text-normal font-light"}>Atelier B²</h1>
-                <h1 className={"text-5xl  text-normal font-normal"}>Atelier B²</h1>
-            </div>
-            <div className={"text-center py-20"}>
-                <h1 className={"text-5xl  text-normal font-thin"}>Atelier B²</h1>
-                <h1 className={"text-5xl -mt-16 text-normal font-thin"}>Atelier B²</h1>
-                <h1 className={"text-5xl -mt-16 text-normal font-thin"}>Atelier B²</h1>
+
+                </p>
+                <br/>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias amet aperiam aspernatur
+                    assumenda atque autem, consectetur consequatur corporis cumque cupiditate delectus dolorem doloribus
+                    dolorum, ducimus ea eius eligendi enim eos error est ex explicabo facere fuga fugiat harum id illum
+                    impedit in incidunt ipsa ipsam iure laborum laudantium magnam magni minus molestiae mollitia natus
+                    necessitatibus nemo neque nihil nisi nobis non nostrum numquam obcaecati odio officia omnis optio
+                    pariatur perferendis perspiciatis placeat praesentium provident quae quaerat quasi qui quia quidem
+                    quisquam quo ratione recusandae repellat reprehenderit repudiandae rerum saepe sapiente sequi
+                    similique
+                    sit soluta sunt suscipit tempora tenetur totam ullam unde vel velit veniam veritatis voluptas
+                    voluptates voluptatum. Adipisci alias amet aperiam aspernatur assumenda atque autem, consectetur
 
 
-
-            </div>
-            <div className={"text-center py-20"}>
-                <h1 className={"text-5xl  text-normal font-thin"}>Atelier B²</h1>
-                <h1 className={"text-5xl ml-6 -mt-16 text-normal font-light"}>Atelier B²</h1>
-                <h1 className={"text-5xl ml-10 -mt-16 text-normal font-normal"}>Atelier B²</h1>
+                </p>
             </div>
         </>
 
-    )
-        ;
+    );
 }
 
 export default Page;

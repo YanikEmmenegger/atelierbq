@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         'AtelierBQ-Dark': "rgb(30, 30, 30)",
         'AtelierBQ-Light':"rgb(255 247 237)",
+        'AtelierBQ-LightDarker': "rgb(250 246 239)",
         'AtelierBQ-AccentLight': "rgb(254 215 170)",
         'AtelierBQ-AccentDark': "rgb(234 88 12)",
       },

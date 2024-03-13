@@ -4,8 +4,7 @@ import "./globals.css";
 
 // Importieren der Schriftart in Ihrer Seitenkomponente
 import {Roboto_Condensed} from 'next/font/google';
-import Navigation from "@/components/Navigation";
-import Navigation2 from "@/components/Navigation2";
+import Navigation from "@/components/navigation/Navigation";
 
 // Konfigurieren der Schriftart mit spezifischen Gewichten
 const robotoCondensed = Roboto_Condensed({
@@ -28,9 +27,8 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={robotoCondensed.className}>
-                <Navigation />
-                <Navigation2/>
                 {children}
+                <Navigation />
             </body>
         </html>
     );
