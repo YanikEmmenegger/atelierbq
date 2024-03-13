@@ -1,5 +1,5 @@
 # Verwenden eines offiziellen Node.js Basisbildes
-FROM node:16
+FROM node:latest
 
 # Setzen des Arbeitsverzeichnisses im Container
 WORKDIR /app
@@ -13,8 +13,6 @@ RUN npm install
 # Kopieren des gesamten Projektcodes in das Arbeitsverzeichnis
 COPY . .
 
-# Öffnen des Ports, den Next.js verwendet (standardmäßig 3000, kann angepasst werden)
-EXPOSE 3000
 
 # Ausführen des Next.js Entwicklungsservers
 CMD ["npm", "run", "dev"]
