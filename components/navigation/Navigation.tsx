@@ -4,6 +4,7 @@ import {RxCross1} from "react-icons/rx";
 import {twMerge} from "tailwind-merge";
 import NavItemLg from "@/components/navigation/NavItemLg";
 import NavItemSm from "@/components/navigation/NavItemSm";
+import {CiMenuBurger} from "react-icons/ci";
 
 
 const Navigation: FC = () => {
@@ -22,8 +23,9 @@ const Navigation: FC = () => {
                     <NavItemLg href={"#"} active={false} text={"Credo"}/>
                 </div>
                 <div onClick={() => setIsOpen(!isOpen)} id={"nav-opener"} className={"lg:hidden"}>
-                    <RxCross1
-                        className={twMerge('hover:scale-105 transition-all duration-300', isOpen ? "rotate-0" : "rotate-45")}
+                    <CiMenuBurger
+
+                        className={twMerge('hover:scale-105 transition-all duration-300', isOpen ? "rotate-0" : "rotate-0")}
                         fontSize={"50px"}/>
                 </div>
 
