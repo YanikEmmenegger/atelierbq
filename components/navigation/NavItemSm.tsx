@@ -11,8 +11,8 @@ interface NavItemSmProps {
 
 const NavItemSm: FC<NavItemSmProps> = ({onClick, text, active, href}) => {
     return (
-        <Link href={href}>
-            <h1 onClick={() => onClick}
+        <Link onClick={onClick} href={href}>
+            <h1
                 className={twMerge("text-5xl my-5 cursor-pointer hover:underline font-light", active ? "" : "")}>{text}</h1>
         </Link>
     );
