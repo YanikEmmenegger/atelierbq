@@ -2,7 +2,15 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+// Importieren der Schriftart in Ihrer Seitenkomponente
+import {Roboto_Condensed } from 'next/font/google';
+
+// Konfigurieren der Schriftart mit spezifischen Gewichten
+const robotoCondensed = Roboto_Condensed({
+  weight: ['100', '300', '400'], // Thin 100, Light 300, Regular 400
+  subsets: ['latin'], // Definieren Sie die gewünschten Schriftschnitte
+  display: 'swap', // Verbessert das Rendering von Textinhalten, indem das unmittelbare Anzeigen in einem Standardstil ermöglicht wird, bis die Schriftart geladen ist
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={robotoCondensed.className}>{children}</body>
     </html>
   );
 }
