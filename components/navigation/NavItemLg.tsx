@@ -11,7 +11,7 @@ interface NavItemLgProps {
 const NavItemLg: FC<NavItemLgProps> = ({active, text, href}) => {
     return (
         <Link href={href}>
-            <p className={twMerge("text-lg transition-colors duration-700 ease-linear hover:underline pointer px-3 py-2", active ? "bg-AtelierBQ-AccentLight": "")}>{text}</p>
+            <p className={twMerge("text-lg transition-colors duration-700 ease-linear font-thin hover:underline pointer px-3 py-2", active ? "bg-AtelierBQ-AccentLight": "")}>{text}</p>
         </Link>
     );
 }
