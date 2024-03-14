@@ -1,10 +1,10 @@
 import type {Metadata} from "next";
-import {Inter} from "next/font/google";
 import "./globals.css";
 
 // Importieren der Schriftart in Ihrer Seitenkomponente
 import {Roboto_Condensed} from 'next/font/google';
 import Navigation from "@/components/navigation/Navigation";
+import {twMerge} from "tailwind-merge";
 
 // Konfigurieren der Schriftart mit spezifischen Gewichten
 const robotoCondensed = Roboto_Condensed({
@@ -26,10 +26,10 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={robotoCondensed.className}>
-                {children}
-                <Navigation />
-            </body>
+        <body className={twMerge(robotoCondensed.className, "bg-AtelierBQ-Light")}>
+            <main className={"container pt-32 mx-auto text-left w-4/5"}> {children}</main>
+        <Navigation/>
+        </body>
         </html>
     );
 }

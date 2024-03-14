@@ -4,7 +4,6 @@ import {FC} from "react";
 const Page: FC = () => {
     return (
         <>
-            <div className={"w-3/4 pt-44 mx-auto"}>
                 <h1 className={"text-4xl"}>Projekte</h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias amet aperiam aspernatur
@@ -49,7 +48,6 @@ const Page: FC = () => {
 
 
                 </p>
-            </div>
         </>
 
     );
