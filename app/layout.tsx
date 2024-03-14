@@ -5,6 +5,7 @@ import "./globals.css";
 import {Roboto_Condensed} from 'next/font/google';
 import Navigation from "@/components/navigation/Navigation";
 import {twMerge} from "tailwind-merge";
+import Footer from "@/components/footer/Footer";
 
 // Konfigurieren der Schriftart mit spezifischen Gewichten
 const robotoCondensed = Roboto_Condensed({
@@ -27,8 +28,13 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body className={twMerge(robotoCondensed.className, "bg-AtelierBQ-Light")}>
-            <main className={"container pt-32 mx-auto text-left w-4/5"}> {children}</main>
+        <main className={"container pt-32 mx-auto text-left w-4/5 flex flex-col min-h-screen"}>
+            <div className={"flex grow"}>
+                {children}
+            </div>
+        </main>
         <Navigation/>
+        <Footer/>
         </body>
         </html>
     );

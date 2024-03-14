@@ -7,6 +7,7 @@ import {CiMenuBurger} from "react-icons/ci";
 import Link from "next/link";
 import {routesAvailable} from "@/routes";
 import {usePathname} from "next/navigation";
+import { motion } from "framer-motion";
 
 
 const Navigation: FC = () => {
@@ -25,8 +26,10 @@ const Navigation: FC = () => {
 
     const [isOpen, setIsOpen] = useState(false)
     return (
-        <>
-            <div className={"p-5 flex w-full fixed top-0 left-0 justify-between items-center z-40 border-b-2 border-black border-opacity-10 bg-AtelierBQ-Light"}>
+        <motion.div initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{ease: 'easeInOut',duration: 0.5}}>
+            <div className={"px-10 py-5 flex w-full fixed top-0 left-0 justify-between items-center z-40 border-b-2 border-black border-opacity-10 bg-AtelierBQ-Light"}>
                 <Link onClick={()=>setIsOpen(false)} href={"/"}><h1 className={"text-3xl  text-normal font-thin"}>Atelier B²</h1></Link>
                 <div className={"lg:flex gap-7 hidden"}>
                     {
@@ -55,7 +58,7 @@ const Navigation: FC = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </motion.div>
     );
 }
 
