@@ -7,7 +7,7 @@ interface Heading2Props {
 
 const Heading2: FC<Heading2Props> = ({text}) => {
     return (
-        <h1 className={"text-3xl font-normal"}>
+        <h1 className={"md:text-3xl text-xl font-normal"}>
             {text}
         </h1>
     );

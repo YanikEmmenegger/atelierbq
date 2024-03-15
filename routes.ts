@@ -1,5 +1,9 @@
 export const routesAvailable = [
     {
+        path: '/',
+        name: 'Startseite'
+    },
+    {
         path: '/projects',
         name: 'Projekte'
     },
@@ -11,4 +15,5 @@ export const routesAvailable = [
         path: '/aboutus',
         name: 'Über uns'
     }
+
 ]

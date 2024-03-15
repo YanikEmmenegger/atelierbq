@@ -28,7 +28,7 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body className={twMerge(robotoCondensed.className, "bg-AtelierBQ-Light")}>
-        <main className={"container pt-32 mx-auto text-left w-4/5 flex flex-col min-h-screen"}>
+        <main className={"container pt-32 mx-auto text-left md:w-4/5 w-[90%] flex flex-col min-h-screen"}>
             <div className={"flex grow"}>
                 {children}
             </div>
