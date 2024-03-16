@@ -23,12 +23,6 @@ const HeroSection: FC<HeroSectionProps> = ({ text, subtitle, title, img, name, i
         setOddOrEven(index % 2 === 0);
     }, [index]);
 
-    // Skeleton-Stil
-    const skeletonStyle = {
-        width: '100%',
-        height: '100%',
-        backgroundColor: '#e0e0e0',
-    };
 
     return (
         <motion.div
@@ -37,7 +31,7 @@ const HeroSection: FC<HeroSectionProps> = ({ text, subtitle, title, img, name, i
             transition={{ ease: 'easeInOut', duration: 0.75 }}>
             <div
                 className={twMerge("mt-3 text-center flex gap-4 py-8", oddOrEven ? "flex-col lg:flex-row" : "flex-col lg:flex-row-reverse")}>
-                <div className={"lg:w-1/3 w-1/2 bg-AtelierBQ-AccentDark mx-auto"}>
+                <div className={"lg:w-1/3 w-1/2 mx-auto"}>
                     {/* Anzeigen des Skeleton, während das Bild lädt */}
                     <Image
                         src={img}

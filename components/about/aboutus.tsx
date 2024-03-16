@@ -3,7 +3,7 @@ import Heading1 from "@/components/Heading1";
 
 
 const Aboutus: FC = () => {
-    return <>
+    return <div className={"py-5"}>
         <Heading1 text={"Über uns"}></Heading1>
         <p className={"text-lg pb-10 font-light"}>
 
@@ -25,7 +25,7 @@ const Aboutus: FC = () => {
         Transparenz. Dabei setzen wir auf neueste Technologien und Materialien, um innovative Architektur zu
         schaffen, die begeistert und beständig ist.
         </p>
-    </>
+    </div>
 }
 
 export default Aboutus;

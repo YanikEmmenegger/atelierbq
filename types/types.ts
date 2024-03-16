@@ -23,3 +23,8 @@ export interface Value{
     text: string;
     img: string;
 }
+
+export interface Partner{
+    href: string;
+    img: string;
+}
